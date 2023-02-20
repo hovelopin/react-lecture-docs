@@ -1,5 +1,6 @@
 // 기본적인 사용법
 import { useState } from "react";
+import UseStateBatching from "../components/useState/UseStateBatching";
 import UseStateObjectAndArray from "../components/useState/UseStateObjectAndArray";
 import UseStateResetStateWithKey from "../components/useState/UseStateResetStateWithKey";
 import UseStateUpdater from "../components/useState/UseStateUpdater";
@@ -25,12 +26,22 @@ export default function UseState(){
         {/* set function 여러번 호출 비교 */}
         <UseStateUpdater />
         <br /><br /><br /><br /><br />
+
+
         {/* useState Object and Array */}
         <UseStateObjectAndArray />
         <br /><br /><br /><br /><br />
+
+
+        {/* useState reset key */}
         <UseStateResetStateWithKey key={reset}>
           <button onClick= {handleClickResetState}>Reset Button</button>
         </UseStateResetStateWithKey>
+        <br /><br /><br /><br /><br />
+
+        {/* useState Batching */}
+        <UseStateBatching />
+        <br /><br /><br /><br /><br />
       </div>
     </>
   )
