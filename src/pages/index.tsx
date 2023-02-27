@@ -8,9 +8,13 @@ export default function Index(){
         <li>
           <Link to="useState">useState</Link>
         </li>
+      </ul>
+      <ul>
         <li>
           <Link to="useEffect">useEffect</Link>
         </li>
+      </ul>
+      <ul>
         <li>
           <Link to="useRef">useRef</Link>
         </li>
